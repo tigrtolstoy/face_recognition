@@ -13,9 +13,8 @@ with open(CONFIG_FNAME, 'r') as config_file:
     config = json.load(config_file)
 
 camera_id = config['camera_id']
-
-camera = Camera(camera_id)
-
+resolution = (config['frame_width'], config['frame_height'])
+camera = Camera(camera_id, resolution)
 
 while True:
     img = camera.get_frame()
@@ -27,11 +26,18 @@ while True:
     pressed_key = cv2.waitKey(10)
 
     if pressed_key & 0xFF == KEYS.SPACE.value:
-        send_image('secure_system_url', img)
-        client_logger.info('Image sended to server')
+        client_logger.info('Sending image to server...')
+        url = f'http://{config["server_host"]}:{config["server_port"]}/getimage'
+
+        response = send_image(url, img)
+
+        if 'error' in response:
+            client_logger.error(response['error'])
+        else:
+            client_logger.info('Server received the image')
+
     elif pressed_key & 0xFF == KEYS.ESC.value:
         client_logger.info('Camera was stopped')
         break
-
 
 camera.close()

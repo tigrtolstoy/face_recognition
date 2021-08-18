@@ -1,0 +1,46 @@
+2021-08-18 16:47:42,960 - client_logger - INFO - Отправка фотогорафии на сервер
+2021-08-18 16:47:43,029 - client_logger - INFO - Сервер произвел идентификацию
+2021-08-18 16:47:43,029 - client_logger - INFO - STATUS: unsuccessful - MSG: Нет лица в кадре
+2021-08-18 16:47:44,993 - client_logger - INFO - Попытка идентификации во время блокировки
+2021-08-18 16:47:51,473 - client_logger - INFO - Отправка фотогорафии на сервер
+2021-08-18 16:47:51,775 - client_logger - INFO - Сервер произвел идентификацию
+2021-08-18 16:47:51,776 - client_logger - INFO - STATUS: successful - MSG: Пользователь [123] успешно идентифицирован
+2021-08-18 16:48:15,184 - client_logger - INFO - Отправка фотогорафии на сервер
+2021-08-18 16:48:15,519 - client_logger - INFO - Сервер произвел идентификацию
+2021-08-18 16:48:15,520 - client_logger - INFO - STATUS: unsuccessful - MSG: Другой человек в кадре
+2021-08-18 16:48:48,634 - client_logger - INFO - Отправка фотогорафии на сервер
+2021-08-18 16:48:48,704 - client_logger - INFO - Сервер произвел идентификацию
+2021-08-18 16:48:48,705 - client_logger - INFO - STATUS: unsuccessful - MSG: Больше одного лица в кадре
+2021-08-18 16:53:24,061 - client_logger - INFO - Отправка фотогорафии на сервер
+2021-08-18 16:53:24,377 - client_logger - INFO - Сервер произвел идентификацию
+2021-08-18 16:53:24,377 - client_logger - INFO - STATUS: unsuccessful - MSG: Другой человек в кадре
+2021-08-18 16:53:33,499 - client_logger - INFO - Работа камеры остановлена
+2021-08-18 16:55:31,177 - client_logger - INFO - Отправка фотогорафии на сервер
+2021-08-18 16:56:40,473 - client_logger - INFO - Отправка фотогорафии на сервер
+2021-08-18 16:57:24,622 - client_logger - INFO - Отправка фотогорафии на сервер
+2021-08-18 16:57:24,721 - client_logger - INFO - Сервер произвел идентификацию
+2021-08-18 16:57:24,721 - client_logger - INFO - STATUS: unsuccessful - MSG: Нет лица в кадре - COINCIDENCE_CONFIDENCE: 99
+2021-08-18 16:57:50,811 - client_logger - INFO - Отправка фотогорафии на сервер
+2021-08-18 16:57:50,901 - client_logger - INFO - Сервер произвел идентификацию
+2021-08-18 16:57:50,901 - client_logger - INFO - STATUS: unsuccessful - MSG: Нет лица в кадре - COINCIDENCE_CONFIDENCE: -
+2021-08-18 16:57:58,283 - client_logger - INFO - Отправка фотогорафии на сервер
+2021-08-18 16:57:58,590 - client_logger - INFO - Сервер произвел идентификацию
+2021-08-18 16:57:58,591 - client_logger - INFO - STATUS: unsuccessful - MSG: Другой человек в кадре - COINCIDENCE_CONFIDENCE: 66
+2021-08-18 16:58:18,602 - client_logger - INFO - Отправка фотогорафии на сервер
+2021-08-18 16:58:18,913 - client_logger - INFO - Сервер произвел идентификацию
+2021-08-18 16:58:18,913 - client_logger - INFO - STATUS: successful - MSG: Пользователь [123] успешно идентифицирован - COINCIDENCE_CONFIDENCE: 66
+2021-08-18 16:58:59,167 - client_logger - INFO - Отправка фотогорафии на сервер
+2021-08-18 16:58:59,485 - client_logger - INFO - Сервер произвел идентификацию
+2021-08-18 16:58:59,485 - client_logger - INFO - STATUS: successful - MSG: Пользователь [123] успешно идентифицирован - COINCIDENCE_CONFIDENCE: 64%
+2021-08-18 17:13:19,630 - client_logger - INFO - Отправка фотогорафии на сервер
+2021-08-18 17:13:19,951 - client_logger - INFO - Сервер произвел идентификацию
+2021-08-18 17:13:19,951 - client_logger - INFO - STATUS: successful - MSG: Пользователь [123] успешно идентифицирован - COINCIDENCE_CONFIDENCE: 64%
+2021-08-18 17:14:27,560 - client_logger - INFO - Отправка фотогорафии на сервер
+2021-08-18 17:14:27,874 - client_logger - INFO - Сервер произвел идентификацию
+2021-08-18 17:14:27,874 - client_logger - INFO - STATUS: unsuccessful - MSG: Другой человек в кадре - COINCIDENCE_CONFIDENCE: 70%
+2021-08-18 17:15:20,461 - client_logger - INFO - Отправка фотогорафии на сервер
+2021-08-18 17:15:20,532 - client_logger - INFO - Сервер произвел идентификацию
+2021-08-18 17:15:20,533 - client_logger - INFO - STATUS: unsuccessful - MSG: Нет лица в кадре - COINCIDENCE_CONFIDENCE: -%
+2021-08-18 17:16:09,380 - client_logger - INFO - Отправка фотогорафии на сервер
+2021-08-18 17:16:09,450 - client_logger - INFO - Сервер произвел идентификацию
+2021-08-18 17:16:09,450 - client_logger - INFO - STATUS: unsuccessful - MSG: Больше одного лица в кадре - COINCIDENCE_CONFIDENCE: -%

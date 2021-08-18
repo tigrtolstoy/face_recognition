@@ -1,8 +1,6 @@
 import cv2
 import dlib
 
-# from image_processing import *
-
 
 class FaceDetector:
     '''

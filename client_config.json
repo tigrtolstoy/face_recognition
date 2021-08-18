@@ -3,6 +3,8 @@
     "frame_width": 640,
     "frame_height": 480,
 
+    "wrong_ident_timeout": 5,
+
     "server_host": "0.0.0.0",
     "server_port": 5051
 }

@@ -1,11 +1,12 @@
 import logging
 
 
-file_format = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+file_format = logging.Formatter(
+    '%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 stream_format = logging.Formatter('%(name)s - %(levelname)s - %(message)s')
 
 
-# Логгер для клиента 
+# Логгер для клиента
 client_logger = logging.getLogger('client_logger')
 client_logger.setLevel(logging.INFO)
 

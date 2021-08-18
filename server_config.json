@@ -1,4 +1,7 @@
 {
     "host": "0.0.0.0",
-    "port": 5051
+    "port": 5051,
+    "path_to_save_photos": "identification_photos",
+    "db_path": "staff_faces",
+    "accuracy_thrashold": 0.6
 }

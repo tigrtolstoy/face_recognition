@@ -48,30 +48,3 @@ class FaceDetector:
         img = cv2.resize(image, self.__dst_img_size)
         img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
         return img
-
-
-# Тестирование работы
-if __name__ == '__main__':
-
-    cap = cv2.VideoCapture(0)
-    detector = FaceDetector()
-
-    while True:
-        ret, image = cap.read()
-        if ret is None:
-            break
-        faces = detector.detect(image)
-
-        cnt = 0
-        for face in faces:
-            draw_face(image, face)
-            face_img = crop_face(image, face)
-            cv2.imshow(f'{cnt}face', face_img)
-            cnt += 1
-
-        cv2.imshow('image', image)
-        k = cv2.waitKey(10)
-        if k & 0xFF == 27:
-            break
-
-    cap.release()

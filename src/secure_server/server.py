@@ -97,6 +97,8 @@ class ImageSaver:
         files_in_dir = os.listdir(dir_to_save)
         max_id = 0
         for fname in files_in_dir:
+            if fname == '.gitkeep':
+                continue
             ident_id = int(fname.split('.')[0])
             if ident_id > max_id:
                 max_id = ident_id

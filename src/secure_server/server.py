@@ -25,7 +25,7 @@ class IdentificationHandler:
 
     def identificate(self, image, employee_id):
         server_logger.info('Start identification')
-        confidence = '-'
+        confidence = 0
         detected_faces = self.__face_detector.detect(image)
         if len(detected_faces) == 1:
             status, msg, subdir_to_save, confidence = self.__process_single_face_photo(
@@ -62,6 +62,7 @@ class IdentificationHandler:
         if reference is None:
             status = 'unsuccessful'
             msg = IdentificationStatus.no_id_in_database.value.format(employee_id)
+            match_result = [0]
         else:
             match_result = self.__match_faces(
                 image, detected_faces[0], reference)

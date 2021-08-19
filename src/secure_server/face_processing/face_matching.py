@@ -19,6 +19,8 @@ class FaceMatcher:
     def load_reference(self, employee_id, face_detector):
         img_name = f'{employee_id}.png'
         img = cv2.imread(os.path.join(self.__path_to_references, img_name))
+        if img is None:
+            return
         face = face_detector.detect(img)
         face_img = crop_face(img, face[0])
         return face_img

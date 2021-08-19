@@ -16,7 +16,9 @@ def send_image(url, image):
     encoded_image = encode_image(image)
     try:
         response = requests.post(url, data=encoded_image)
-        return response
+        if response.status_code == 500:
+            return {'error': 'Ошибка на сервере'}
+        return response.json()
     except requests.exceptions.ConnectionError:
         return {'error': 'Ошибка подключения к серверу'}
 

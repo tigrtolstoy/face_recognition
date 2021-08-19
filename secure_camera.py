@@ -71,7 +71,7 @@ if __name__ == '__main__':
                 person_id
             )
 
-            response = send_image(url, img).json()
+            response = send_image(url, img)
 
             if 'error' in response:  # если сервер недоступен
                 client_logger.error(response['error'])

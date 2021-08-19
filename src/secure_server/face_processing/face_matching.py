@@ -1,6 +1,8 @@
 import os
 import cv2
 import face_recognition
+from src.secure_server.image_processing import crop_face
+
 
 
 class FaceMatcher:
@@ -14,10 +16,12 @@ class FaceMatcher:
         distance = face_recognition.face_distance([encoded_face1], encoded_face2)
         return distance
 
-    def load_reference(self, employee_id):
+    def load_reference(self, employee_id, face_detector):
         img_name = f'{employee_id}.png'
         img = cv2.imread(os.path.join(self.__path_to_references, img_name))
-        return img
+        face = face_detector.detect(img)
+        face_img = crop_face(img, face[0])
+        return face_img
 
     def __encode_face(self, face_img):
         img = cv2.resize(face_img, self.__img_size_to_encode)

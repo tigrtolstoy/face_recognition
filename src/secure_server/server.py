@@ -57,7 +57,8 @@ class IdentificationHandler:
         status = 'unsuccessful'
         subdir_to_save = 'unsuccessful'
 
-        reference = self.__face_matcher.load_reference(employee_id)
+        reference = self.__face_matcher.load_reference(employee_id,
+                                                       self.__face_detector)
         if reference is None:
             status = 'unsuccessful'
             msg = IdentificationStatus.no_id_in_database.value.format(employee_id)
